@@ -5,5 +5,5 @@
 .venv
 venv/
 data/
-
+.DS_Store
 
