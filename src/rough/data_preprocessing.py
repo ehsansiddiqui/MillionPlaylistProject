@@ -99,7 +99,7 @@ def create_dataframes(data_path, challenge_file, output_path, partitions):
 
 if __name__ == "__main__":
     # Define paths
-    data_path = "../data/raw/"  # Path to directory with JSON files
+    data_path = "../data/raw/data"  # Path to directory with JSON files
     challenge_file = "../data/raw/challenge_set.json"  # Challenge set file
     output_path = "../data/processed/"  # Output directory for CSV files
      # Number of partitions for parallelism
