@@ -5,5 +5,7 @@
 .venv
 venv/
 data/
-.DS_Store
+.DS_Store/
+src/rough/
+notebook/rough/
 
