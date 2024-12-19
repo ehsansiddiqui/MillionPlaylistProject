@@ -181,7 +181,7 @@ This hybrid approach ensures adaptability to various input scenarios, leveraging
 
 
 ## Technology Used
-__Apache Spark__: Distributed data processing framework.
-__PySpark__: Python API for Spark.
-__Scikit-learn__: For TF-IDF vectorization and cosine similarity computations.
-__Parquet__: For optimized data storage.
+- __Apache Spark__: Distributed data processing framework.
+- __PySpark__: Python API for Spark.
+- __Scikit-learn__: For TF-IDF vectorization and cosine similarity computations.
+- __Parquet__: For optimized data storage.
