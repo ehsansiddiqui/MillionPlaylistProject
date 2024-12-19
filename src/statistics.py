@@ -6,11 +6,11 @@ import pandas as pd
 
 spark = SparkSession.builder.appName("ParquetExample").getOrCreate()
 
-df_playlists_info = spark.read.parquet("/Users/daanweetjens/Downloads/Group Project/df_playlists_info_spark/*.parquet")
-df_tracks = spark.read.parquet("/Users/daanweetjens/Downloads/Group Project/df_tracks_spark/*.parquet")
-df_playlists_tracks = spark.read.parquet("/Users/daanweetjens/Downloads/Group Project/df_playlists_spark/*.parquet")
-df_playlists_test_info = spark.read.parquet("/Users/daanweetjens/Downloads/Group Project/df_playlists_test_info_spark/*.parquet")
-df_playlists_test = spark.read.parquet("/Users/daanweetjens/Downloads/Group Project/df_playlists_test_spark/*.parquet")
+df_playlists_info = spark.read.parquet("/data/df_playlists_info_spark/*.parquet")
+df_tracks = spark.read.parquet("/data/df_tracks_spark/*.parquet")
+df_playlists_tracks = spark.read.parquet("/data/df_playlists_spark/*.parquet")
+df_playlists_test_info = spark.read.parquet("/data/df_playlists_test_info_spark/*.parquet")
+df_playlists_test = spark.read.parquet("/data/df_playlists_test_spark/*.parquet")
 
 # Average number of Followers, Artists, Albums, and Tracks per playlist
 avg_followers = df_playlists_info.agg({"num_followers": "avg"}).collect()[0][0]
